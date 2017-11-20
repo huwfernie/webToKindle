@@ -15,9 +15,16 @@ This will be a node project. Using express to render a simple website will let a
 
 references:
 
+https://nodejs.org/en/
+
 https://www.amazon.com/gp/feature.html?docId=1000765211
 
 https://www.amazon.com/gp/sendtokindle/email
+
+https://nodemailer.com/about/
+
+https://medium.com/@manojsinghnegi/sending-an-email-using-nodemailer-gmail-7cfa0712a799
+
 
 *I will also try to tutorialize the build, which may result in several versions of the app to represent different phases of development*
 

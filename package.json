@@ -1,0 +1,19 @@
+{
+  "name": "webtokindle",
+  "version": "1.0.0",
+  "description": "a node express cheerio program to scrape and convert blogs to kindle files",
+  "main": "webToKindle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huwfernie/webToKindle.git"
+  },
+  "author": "Huw Fernie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huwfernie/webToKindle/issues"
+  },
+  "homepage": "https://github.com/huwfernie/webToKindle#readme"
+}
