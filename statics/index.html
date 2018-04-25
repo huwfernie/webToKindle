@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Blog-Scraper</title>
+		<link rel="stylesheet" href="styles/index.css" type="text/css" />
+	</head>
+	<body>
+		<!-- <img src="images/roser.png"/> -->
+		<p>If you enter a website address, a css target for it's main content, this project will turn the main blog into a kindle file on your desktop.</p>
+		<p>The output will be an html file on your desktop with a timestamped name.</p>
+		<p>Remeber to click the final "close" button to quit the node-express server.</p>
+		<form method="post" content-type="application/json">
+			<fieldset class="testfs">
+				<legend>URLs</legend>
+				<div>
+					<label>web address:</label><br />
+					 <input type="text" name="address" placeholder="http://www.mrmoneymustache.com/2011/04/06/meet-mr-money-mustache/" value="http://www.mrmoneymustache.com/2011/04/06/meet-mr-money-mustache/">
+				</div>
+				<div>
+					<label>How Many Blogs?</label> (just a number would be nice)<br />
+					<input type="number" name="blogNumbers" placeholder="2" value="2">
+				</div>
+				<div>
+					<label>css selector:</label>(this needs to be the container for the main body of the blog, such as <em>.post_content</em>)<br />
+					<input type="text" name="selectorBlog" placeholder=".post_content" value=".post_content">
+				</div>
+				<div>
+					<label>css selector:</label>(this is the button we'll be clicking to get the next blog, such as <em>.next_post</em>)<br />
+					<input type="text" name="selectorNext" placeholder=".next_post" value=".next_post">
+				</div>
+				<hr>
+				<legend>Details</legend>
+				<div>
+					<label>Title:</label><br />
+					 <input type="text" name="title" placeholder="Mr Money Mustache" value="Mr Money Mustache">
+				</div>
+				<div>
+					<label>Language</label> en-us<br />
+					<input type="text" name="lang" placeholder="en-us" value="en-us">
+				</div>
+				<div>
+					<label>Author</label><br />
+					<input type="text" name="author" placeholder="Mr Money" value="Mr Money">
+				</div>
+				<div>
+					<label>Copyrights</label><br />
+					<input type="text" name="copyright" placeholder="Mr Money" value="Mr Money">
+				</div>
+				<button>Create</button>
+			</fieldset>
+		</form>
+		<a href="/exit/"><button>Quit</button></a>
+	</body>
+</html>

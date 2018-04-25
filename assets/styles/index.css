@@ -1,0 +1,25 @@
+.testfs {
+	width: 605px;
+border: solid 1px #c0c0c0;
+border-radius: 8px;
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+background-color:#f8f8f8;
+margin-bottom:10px;
+}
+
+.testfs label {
+	font-weight: 600;
+}
+
+.testfs div{
+	margin: 20px 0;
+	width: 100%;
+	border: 0px solid black;
+	box-sizing: border-box;
+}
+
+.testfs input{
+	width: 100%;
+	font-size: 1em;
+}

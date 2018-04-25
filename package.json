@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/huwfernie/webToKindle/issues"
   },
-  "homepage": "https://github.com/huwfernie/webToKindle#readme"
+  "homepage": "https://github.com/huwfernie/webToKindle#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "request": "^2.83.0"
+  }
 }
