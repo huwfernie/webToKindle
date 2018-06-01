@@ -14,7 +14,7 @@
           Table of Contents
         </text>
       </navLabel>
-    <content src="indexToc.html#toc" />
+    <content src="index.html#toc" />
   </navPoint>
   -replace-
 

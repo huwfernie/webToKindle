@@ -17,18 +17,16 @@ function makeOPF(title,lang,author,copyright) {
     </dc-metadata>
   </metadata>
   <manifest>
-    <item id="content" media-type="text/x-oeb1-document" href="index.html#toc"></item>
-    <item id="ncx" media-type="application/x-dtbncx+xml" href="toc.ncx"/>
-    <item id="text" media-type="text/x-oeb1-document" href="index.html#ch1"></item>
-    <item id="Images" media-type="text/x-oeb1-document" href="Images.html"></item>
+    <item id="content" media-type="text/x-oeb1-document" href="index.html"></item>
+    <item id="ncx" media-type="application/x-dtbncx+xml" href="index.ncx"/>
+    <item id="text" media-type="text/x-oeb1-document" href="index.html"></item>
   </manifest>
   <spine toc="ncx">
     <itemref idref="content"/>
     <itemref idref="text"/>
-    <itemref idref="Images"/>
   </spine>
   <guide>
-    <reference type="toc" title="Table of Contents" href="toc.html"/>
+    <reference type="toc" title="Table of Contents" href="index.html#toc"/>
     <reference type="text" title="Book" href="index.html"/>
   </guide>
 </package>`;

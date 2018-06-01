@@ -1,3 +1,5 @@
+//this file is for testing only, the functions here are also in scrape.js
+
 const fs = require('fs');
 const request = require('request');		// to load the target website
 const cheerio = require('cheerio');		// to scrape/parse the result
@@ -23,7 +25,7 @@ function saveNcx(temp) {
     // console.log('snippet: ',snippet);
     const array = snippet.split('-replace-');
     temp.forEach((blog)=>{
-      array[0] = array[0] + `\t\t<navPoint id="${blog.number+1}" playOrder="${blog.number+1}">\n				<navLabel>\n					<text>\n						${blog.title}\n					</text>\n				</navLabel>\n				<content src="index.html#ch${blog.number+1}" />\n			</navPoint>\n`;
+      array[0] = array[0] + `\t\t<navPoint id="${blog.number+1}" playOrder="${blog.number+1}">\n				<navLabel>\n					<text>\n						${blog.title}\n					</text>\n				</navLabel>\n				<content src="index.html#ch${blog.number}" />\n			</navPoint>\n`;
     });
     snippet = array[0] + array[1];
     saveNcxEnd(snippet,'output/index.ncx').then(() => {
