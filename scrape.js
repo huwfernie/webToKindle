@@ -126,7 +126,7 @@ function saveNcxEnd(file,filename) {
   return new Promise((resolve, reject)=>{
     // const prefix = `<?xml version="1.0"?>\n<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"\n"http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">\n<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">\n<head>\n</head>\n  <docTitle>\n    <text>Book title</text>\n  </docTitle>\n  <navMap>\n    <navPoint id="toc" playOrder="1">\n      <navLabel>\n        <text>\n          Table of Contents\n        </text>\n      </navLabel>\n    <content src="indexToc.html#toc" />\n  </navPoint>`;
     // const suffix = '  </navMap>\n</ncx>';
-    fs.appendFile(filename, `\n${file}\n`, function (err) {
+    fs.writeFile(filename, `\n${file}\n`, function (err) {
       if (err) throw err;
       else {
         console.log('Saved! - ');

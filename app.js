@@ -42,7 +42,7 @@ app.post('/', function(req, res){
   opf.makeOPF(req.body.title,req.body.lang,req.body.author,req.body.copyright);
   scrape.scrapeAllBlogs(url,selectorBlog,selectorNext,numberOfBlogs).then(() => {
     commandLine.open('atom','output/index.ncx');
-    commandLine.open('/KindleGen/kindlegen', '/output/index.opf');
+    console.log('KindleGenFolder/kindlegen ./output/index.opf');
     const html = fs.readFileSync('./statics/exit.html');
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.end(html);
